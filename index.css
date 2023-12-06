@@ -1,0 +1,63 @@
+:root {
+  --midnight: #1d1c43;
+  --cinema-red: #b02623;
+  --cozy-purple: #3b3369;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--midnight);
+  margin: 0;
+  font-family: "Poppins";
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logotype {
+  background-image: url(/assets/logo.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 200px;
+  height: 100px;
+  margin: 10px 0px 0px 25px;
+}
+
+nav {
+  display: flex;
+  margin: 50px 50px 15px 50px;
+  gap: 50px;
+}
+
+nav a {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+img {
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  position: relative;
+  top: -20px;
+}
+
+/* HERO */
+
+/* MAIN CONTENT */
+
+/* FOOTER */
