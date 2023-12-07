@@ -112,15 +112,119 @@ h6 {
 
 h1 {
   font-family: 'Poppins';
-  font-weight: 800;
-  font-size: 28px;
-  letter-spacing: 3px;
-  bottom: -18px;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 2px;
+  bottom: -16px;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
 }
 
-/* MAIN CONTENT */
+/* SLIDE 1 */
 
-/* FOOTER */
+.headline {
+  padding: 80px 20px 0px 20px;
+  position: relative;
+}
+
+
+h2, h3, .arrowRed {
+  position: absolute;
+}
+
+
+h2 {
+  margin: 0px;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  bottom: 0px;
+  left: 20px;
+}
+
+
+h3 {
+  margin: 0px;
+  font-family: 'Poppins';
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  bottom: 0px;
+  right: 45px;
+  color: var(--cinema-red);
+}
+
+
+.arrowRed {
+  bottom: 1px;
+  right: 30px;
+}
+
+
+.slideContainer {
+  padding: 10px 20px 20px 20px;
+
+}
+
+.sliderWrapper {
+  position: relative;
+  margin: 0;
+  
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  width: 140px;
+  height: 180px;
+}
+
+
+figure {
+  margin: 0px;
+  padding-right: 12px;
+}
+
+
+figcaption {
+  font-family: 'Poppins';
+  font-size: 10px;
+  font-weight: 300;
+  color: rgba(191, 191, 191, 0.80);
+  letter-spacing: 0.4px;
+}
+
+
+.sliderNav {
+  display: flex;
+  column-gap: 6px;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  
+}
+
+.sliderNav a {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.sldier a:hover {
+  opacity: 100%;
+}
