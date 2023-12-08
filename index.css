@@ -2,6 +2,7 @@
   --midnight: #1d1c43;
   --cinema-red: #b02623;
   --cozy-purple: #3b3369;
+  --dark-midnight: #04062E;
 }
 
 * {
@@ -112,15 +113,280 @@ h6 {
 
 h1 {
   font-family: 'Poppins';
-  font-weight: 800;
-  font-size: 28px;
-  letter-spacing: 3px;
-  bottom: -18px;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 2px;
+  bottom: -16px;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
 }
 
-/* MAIN CONTENT */
+/* SLIDE 1 */
+
+.headline {
+  padding: 80px 20px 0px 20px;
+  position: relative;
+}
+
+
+h2, h3, .arrowRed {
+  position: absolute;
+}
+
+
+h2 {
+  margin: 0px;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  bottom: 0px;
+  left: 20px;
+}
+
+
+h3 {
+  margin: 0px;
+  font-family: 'Poppins';
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  bottom: 0px;
+  right: 45px;
+  color: var(--cinema-red);
+}
+
+
+.arrowRed {
+  bottom: 1px;
+  right: 30px;
+}
+
+
+.slideContainer {
+  padding: 10px 20px 90px 20px;
+
+}
+
+.sliderWrapper {
+  position: relative;
+  margin: 0;
+  
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 90px 0px 3rem -0.75rem var(--midnight) inset;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  width: 140px;
+  height: 180px;
+  border-radius: 5px;
+}
+
+
+figure {
+  margin: 0px;
+  padding-right: 12px;
+}
+
+
+figcaption {
+  font-family: 'Poppins';
+  font-size: 10px;
+  font-weight: 300;
+  color: rgba(191, 191, 191, 0.80);
+  letter-spacing: 0.4px;
+}
+
+
+.sliderNav {
+  display: flex;
+  column-gap: 6px;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  
+}
+
+.sliderNav a {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slider a:hover {
+  opacity: 100%;
+}
+
+.slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 180px;
+  width: 40px;
+  box-shadow: -40px 0px 40px -15px var(--midnight) inset, -30px 0px 30px -10px var(--midnight) inset, -20px 0px 20px -10px var(--midnight) inset;
+
+  z-index: 1;
+}
+
+
+/* ADD */
+
+
+.add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin: 0 auto;
+  height: 230px;
+}
+
+.add-string, h4, h5 {
+  position: absolute;
+}
+
+.backgroundAdd {
+  position: relative;
+  background-color: var(--cinema-red);
+  width: 350px;
+  height: 170px;
+}
+
+
+h4 {
+  font-family: 'Poppins';
+  font-size: 8px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: rgba(191, 191, 191, 0.80);
+  top: -25px;
+  right: 0px;
+}
+
+
+.add-string {
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+
+h5 {
+  font-family: 'Poppins';
+  font-size: 8px;
+  font-weight: 300;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.news-link {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(114, 149, 223);
+}
+
+
 
 /* FOOTER */
+
+
+
+footer {
+  position: relative;
+  background-color: var(--dark-midnight);
+  padding: 20px;
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 200;
+  color:white;
+  opacity: 80%;
+  width: 100%;
+  height: 350px;
+  letter-spacing: 2px;
+}
+
+
+.button-language, .arrow-language, .globe, .phone-number, .phone, .mail-adress, .mail, .copyright {
+  position: absolute;
+}
+
+
+.button-language {
+  border: 0px;
+  font-size: 16px;
+  border-radius: 3px;
+  background: #212352;
+  width: 142px;
+  height: 33px;
+  color:white;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.arrow-language {
+  top: 50px;
+  left: 140px;
+}
+.globe {
+  top:48px;
+  left: 175px;
+}
+.phone-number {
+  top: 120px;
+  left: 20px;
+}
+.phone {
+  top: 118px;
+  left: 140px
+}
+.mail-adress {
+  top: 185px;
+  left: 20px;
+}
+.mail {
+  top: 185px;
+  left: 220px;
+}
+
+.copyright {
+  top: 250px;
+}
+
+.playButton:hover, .bar:hover, h3:hover, .arrowRed:hover, .sliderNav:hover, .button-language:hover, figcaption, .hero, figure {
+  cursor: pointer;
+}
+
+
+
+
+
+@media (max-width: 390px) {
+  .backgroundAdd {
+    width: 100%;
+    max-width: 350px;
+  }
+}
