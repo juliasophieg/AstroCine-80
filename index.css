@@ -40,6 +40,10 @@ body {
   align-content: center;
 }
 
+.navStrings {
+  display: none;
+}
+
 .logotype {
   display: flex;
   background-repeat: no-repeat;
@@ -83,7 +87,9 @@ body {
   background-repeat: no-repeat;
   z-index: 0;
   position: relative;
- 
+}
+.neonDesktop {
+  display: none;
 }
 
 
@@ -408,7 +414,58 @@ footer {
 
 
 @media (min-width: 900px) {
+  /* NAVBAR */
   .barLine {
+    display: none;
+  }
+  .neonMobile {
+    display: none;
+  }
+  .neonDesktop {
+    display: block;
+    width: 100%;
+    height: 160px;
+    background-image: url("assets/neon-desktop.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: 0;
+    position: relative;
+  }
+  .logotype {
+    background-position: left;
+    width: 150px;
+    height: 140px;
+    align-self: start;
+    left: 90px;
+    top: 5px;
+  
+  }
+  .navStrings {
+    display: block;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 600;
+    flex-direction: row;
+  }
+  .navString {
+    position: absolute;
+  }
+  .navString:nth-of-type(1) {
+    right: 520px;
+    top: 60px;
+  }
+  .navString:nth-of-type(2) {
+    right: 300px;
+    top: 60px;
+  }
+  .navString:nth-of-type(3) {
+    right: 80px;
+    top: 60px;
+  }
+
+  /* HERO */
+
+  .hero {
     display: none;
   }
 }
