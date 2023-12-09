@@ -27,7 +27,7 @@ body {
   color: white;
 }
 
-.add-string-desktop, .navStrings, .neonDesktop, .hero-desktop {
+.add-string-desktop, .navStrings, .neonDesktop, .hero-desktop, .arrowWhite {
   display: none;
 }
 
@@ -194,6 +194,7 @@ h3 {
 
 
 .slideContainer {
+  position: relative;
   padding: 10px 20px 90px 20px;
 }
 
@@ -360,7 +361,7 @@ footer {
   font-size: 14px;
   font-weight: 200;
   color:white;
-  opacity: 80%;
+  opacity: 70%;
   width: 100%;
   height: 350px;
   letter-spacing: 2px;
@@ -395,6 +396,7 @@ footer {
 .phone-number {
   top: 120px;
   left: 20px;
+  color: white !important;
 }
 .phone {
   top: 118px;
@@ -542,6 +544,17 @@ footer {
   }
   .slideContainer {
     padding: 40px;
+    padding-bottom: 90px;
+  }
+  .arrowWhite {
+    display: block;
+    position: absolute;
+    z-index: 4;
+    background-color: transparent;
+    border: none;
+    right: 20px;
+    top: 220px;
+    padding:10px;
   }
   figure {
     padding-right: 35px;
@@ -554,9 +567,9 @@ footer {
     position: absolute;
     top: 0;
     right: 0;
-    height: 400px;
-    width: 140px;
-    background: linear-gradient(to right, transparent 0%, var(--midnight) 90%);
+    height: 402px;
+    width: 300px;
+    background: linear-gradient(to right, transparent 0%, var(--midnight) 85%);
     z-index: 1;
   }
   .border {
@@ -567,11 +580,14 @@ footer {
     right: 38px;
     z-index: 3;
   }
+  .sliderNav a {
+    display: none;
+  }
 
   /* ADD*/
 
   .add {
-    padding: 180px 40px;
+    padding: 180px 40px 250px 40px;
     margin: 0 auto;
   }
   .backgroundAdd {
@@ -599,5 +615,43 @@ footer {
     font-size: 16px;
     font-weight: 300;
   }
+
+  /* FOOTER */
+
+  footer {
+    height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    position: none;
+  }
+  .language-container,
+  .phone-container,
+  .mail-container,
+  .copyright-container {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 25%;
+    
+  }
+  .language-container, .phone-container, .mail-container, .copyright-container {
+
+    position: relative;
+  }
+  .button-language, .arrow-language, .globe, .phone-number, .phone, .mail-adress, .mail, .copyright{
+    position: absolute;
+    top: 35px;
+  }
+  .button-language {
+    margin: 0;
+  }
+  .globe {
+    top:42px;
+  }
+  .arrow-language {
+    top: 45px;
+    left: 130px;
+  }
+
 
 }
