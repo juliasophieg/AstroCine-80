@@ -27,6 +27,10 @@ body {
   color: white;
 }
 
+.add-string-desktop, .navStrings, .neonDesktop, .hero-desktop, .arrowWhite {
+  display: none;
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -39,6 +43,7 @@ body {
   position: relative;
   align-content: center;
 }
+
 
 .logotype {
   display: flex;
@@ -83,8 +88,8 @@ body {
   background-repeat: no-repeat;
   z-index: 0;
   position: relative;
- 
 }
+
 
 
 
@@ -98,11 +103,21 @@ body {
   background-repeat: no-repeat;
   z-index: 0;
   background-position: center top;
-  box-shadow: 0px -50px 50px 0px var(--midnight) inset;
+  box-shadow: 0px -50px 50px 0px var(--midnight) inset, 0px -30px 30px 0px var(--midnight) inset;
   position: relative;
   bottom: 35px;
+}
+
+.border-hero {
+  height: 7px;
+  width: 100%;
+  position: absolute;
+  background-color: var(--midnight);
+  bottom: -1px;
+  z-index: 3;
 
 }
+
 
 .playButton, h6, h1 {
   position: absolute;
@@ -136,7 +151,7 @@ h1 {
   white-space: nowrap;
 }
 
-/* SLIDE 1 */
+/* SLIDES */
 
 .headline {
   padding: 60px 20px 0px 20px;
@@ -179,8 +194,17 @@ h3 {
 
 
 .slideContainer {
+  position: relative;
   padding: 10px 20px 90px 20px;
+}
 
+.border {
+  height: 180px;
+  width: 5px;
+  position: absolute;
+  background-color: var(--midnight);
+  right: 16px;
+  z-index: 3;
 }
 
 .sliderWrapper {
@@ -252,9 +276,8 @@ figcaption {
   top: 0;
   right: 0;
   height: 180px;
-  width: 40px;
-  box-shadow: -40px 0px 40px -15px var(--midnight) inset, -30px 0px 30px -10px var(--midnight) inset, -20px 0px 20px -10px var(--midnight) inset;
-
+  width: 80px;
+  background: linear-gradient(to right, transparent 0%, var(--midnight) 90%);
   z-index: 1;
 }
 
@@ -269,6 +292,7 @@ figcaption {
   align-self: center;
   margin: 0 auto;
   height: 230px;
+  padding: 0px 20px;
 }
 
 .add-string, h4, h5 {
@@ -337,7 +361,7 @@ footer {
   font-size: 14px;
   font-weight: 200;
   color:white;
-  opacity: 80%;
+  opacity: 70%;
   width: 100%;
   height: 350px;
   letter-spacing: 2px;
@@ -372,6 +396,7 @@ footer {
 .phone-number {
   top: 120px;
   left: 20px;
+  color: white !important;
 }
 .phone {
   top: 118px;
@@ -390,7 +415,7 @@ footer {
   top: 250px;
 }
 
-.playButton:hover, .bar:hover, h3:hover, .arrowRed:hover, .sliderNav:hover, .button-language:hover, figcaption, .hero, figure {
+.playButton:hover, .bar:hover, h3:hover, .arrowRed:hover, .sliderNav:hover, .button-language:hover, figcaption, .hero, figure, .tickets, .trailer {
   cursor: pointer;
 }
 
@@ -408,7 +433,225 @@ footer {
 
 
 @media (min-width: 900px) {
+/* HIDE */
+   .neonMobile, .hero, h3, .arrowRed, .add-string {
+  display: none;
+  }
+
+  /* NAVBAR */
   .barLine {
     display: none;
   }
+  
+  .neonDesktop {
+    display: block;
+    width: 100%;
+    height: 160px;
+    background-image: url("assets/neon-desktop.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: 0;
+    position: relative;
+  }
+  .logotype {
+    background-position: left;
+    width: 150px;
+    height: 140px;
+    align-self: start;
+    left: 90px;
+    top: 5px;
+  
+  }
+  .navStrings {
+    display: block;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 600;
+    flex-direction: row;
+  }
+  .navString {
+    position: absolute;
+  }
+  .navString:nth-of-type(1) {
+    right: 520px;
+    top: 60px;
+  }
+  .navString:nth-of-type(2) {
+    right: 300px;
+    top: 60px;
+  }
+  .navString:nth-of-type(3) {
+    right: 80px;
+    top: 60px;
+  }
+
+  /* HERO */
+
+  
+  .hero-desktop {
+    display: block;
+    width: 100%;
+    height: 690px;
+    background-image: url("images/hero-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80% left;
+    z-index: 0;
+    background-position: center top;
+    box-shadow: 0px -50px 50px 0px var(--midnight) inset, 0px -30px 30px 0px var(--midnight) inset;
+    position: relative;
+    bottom: 35px;
+  }
+  .trailer, .tickets, .back-to-the-future {
+    position: absolute;
+  }
+  .back-to-the-future {
+    bottom: 100px;
+    right: 100px;
+  }
+  .trailer {
+    top: 130px;
+    left: 90px;
+  }
+  .tickets {
+    top: 210px;
+    left: 113px;
+  }
+  .trailer, .tickets {
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 28px;
+    border-radius: 5px;
+    background: var(--cinema-red);
+    color: white;
+    text-transform: uppercase;
+    border: 0px;
+  }
+
+  /* SLIDES */
+  
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .slider img {
+    width: 300px;
+    height: 400px;
+  }
+  .slideContainer {
+    padding: 40px;
+    padding-bottom: 90px;
+  }
+  .arrowWhite {
+    display: block;
+    position: absolute;
+    z-index: 4;
+    background-color: transparent;
+    border: none;
+    right: 20px;
+    top: 220px;
+    padding:10px;
+  }
+  figure {
+    padding-right: 35px;
+  }
+  figcaption {
+    font-size: 18px;
+  }
+  .slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 402px;
+    width: 300px;
+    background: linear-gradient(to right, transparent 0%, var(--midnight) 85%);
+    z-index: 1;
+  }
+  .border {
+    height: 400px;
+    width: 5px;
+    position: absolute;
+    background-color: var(--midnight);
+    right: 38px;
+    z-index: 3;
+  }
+  .sliderNav a {
+    display: none;
+  }
+
+  /* ADD*/
+
+  .add {
+    padding: 180px 40px 250px 40px;
+    margin: 0 auto;
+  }
+  .backgroundAdd {
+    width: 1100px;
+    height: 210px;
+    border-radius: 10px;
+  }
+  .add-string-desktop {
+    display: block;
+    position: absolute;
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+  h4 {
+    font-size: 20px;
+    top: -60px;
+  }
+  h5 {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  /* FOOTER */
+
+  footer {
+    height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    position: none;
+  }
+  .language-container,
+  .phone-container,
+  .mail-container,
+  .copyright-container {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 25%;
+    
+  }
+  .language-container, .phone-container, .mail-container, .copyright-container {
+
+    position: relative;
+  }
+  .button-language, .arrow-language, .globe, .phone-number, .phone, .mail-adress, .mail, .copyright{
+    position: absolute;
+    top: 35px;
+  }
+  .button-language {
+    margin: 0;
+  }
+  .globe {
+    top:42px;
+  }
+  .arrow-language {
+    top: 45px;
+    left: 130px;
+  }
+
+
 }
