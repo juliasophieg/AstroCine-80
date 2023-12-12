@@ -415,7 +415,7 @@ footer {
   top: 250px;
 }
 
-.playButton:hover, .bar:hover, h3:hover, .arrowRed:hover, .sliderNav:hover, .button-language:hover, figcaption:hover, .hero:hover, figure:hover, .tickets:navString{
+.playButton:hover, .bar:hover, h3:hover, .arrowRed:hover, .sliderNav:hover, .button-language:hover, figcaption:hover, .hero:hover, figure:hover, .tickets:hover .navString:hover {
   cursor: pointer;
 }
 
