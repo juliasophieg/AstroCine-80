@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--midnight);
   margin: 0;
@@ -34,6 +38,10 @@ p {
   justify-content: end;
   align-items: center;
   margin: 0px;
+}
+
+.menu {
+  display: none;
 }
 
 .logotype {
@@ -78,13 +86,17 @@ nav a:hover {
   z-index: 1;
 }
 
+.neon-mobile {
+  display: none;
+}
+
 /* HERO */
 
 .hero {
   width: 100%;
   height: 606px;
   display: flex;
-  padding: 0px 150px;
+  padding: 0px 80px;
   flex-direction: column;
   justify-content: end;
   gap: 30px;
@@ -135,7 +147,7 @@ button {
 
 .about {
   display: flex;
-  margin: 0px 150px;
+  margin: 0px 80px;
   gap: 130px;
 }
 
@@ -179,29 +191,44 @@ button {
   cursor: pointer;
 }
 
+button a {
+  color: white;
+  text-decoration: none;
+}
+
 .movie-images {
   display: flex;
-  padding: 50px 150px;
+  padding: 50px 80px;
   justify-content: space-between;
 }
 
 .image-one,
 .image-two,
 .image-three {
-  width: 300px;
-  height: 200px;
+  width: 30%;
+  transition: all 0.3s ease-in-out;
+}
+
+.image-one:hover,
+.image-two:hover,
+.image-three:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .tickets {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 0px 150px;
+  padding: 0px 80px;
 }
 
 .show-details {
   display: flex;
+  justify-content: space-evenly;
   gap: 40px;
+  width: 100%;
   margin: 20px 0px;
 }
 
@@ -216,6 +243,7 @@ button {
   border-radius: 5px;
   background-color: white;
   color: black;
+  cursor: pointer;
 }
 
 .date,
@@ -344,15 +372,32 @@ button {
 footer {
   display: flex;
   flex-wrap: wrap;
-  position: none;
+  gap: 40px;
+  justify-content: space-between;
   background-color: var(--midnight-dark);
-  padding: 20px;
+  padding: 50px 30px;
   font-size: 14px;
   font-weight: 200;
   opacity: 70%;
   width: 100%;
-  height: 140px;
   letter-spacing: 2px;
+  margin-top: 50px;
+}
+
+.button-language {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 3px;
+  background: #212352;
+  width: 142px;
+  height: 33px;
+  color: white;
+  text-align: left;
+  padding-left: 7px;
 }
 
 .language-container,
@@ -360,68 +405,187 @@ footer {
 .mail-container,
 .copyright-container {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  box-sizing: border-box;
-  padding: 10px;
-  width: 25%;
-  position: relative;
+  gap: 10px;
 }
 
-.button-language,
-.arrow-language,
-.globe,
-.phone-number,
-.phone,
-.mail-adress,
-.mail,
-.copyright {
-  position: absolute;
-  top: 35px;
-}
-.button-language {
-  border: 0px;
-  font-size: 16px;
-  border-radius: 3px;
-  background: #212352;
-  width: 142px;
-  height: 33px;
-  color: white;
-  font-weight: 400;
-  text-align: left;
-  margin: 0;
-}
+@media (max-width: 830px) {
+  nav {
+    display: none;
+  }
 
-.arrow-language {
-  top: 45px;
-  left: 130px;
-}
+  .menu {
+    display: block;
+  }
 
-.globe {
-  top: 42px;
-  left: 175px;
-}
+  .barLine,
+  .logotype {
+    position: absolute;
+  }
 
-.phone-number {
-  top: 45px;
-  left: 20px;
-  color: white !important;
-}
-.phone {
-  top: 42px;
-  left: 140px;
-}
-.mail-adress {
-  top: 42px;
-  left: 20px;
-}
-.mail {
-  top: 42px;
-  left: 220px;
-}
+  .barLine:nth-of-type(1) {
+    top: 16px;
+    left: 5px;
+  }
 
-.copyright {
-  top: 42px;
-}
+  .barLine:nth-of-type(2) {
+    top: 21px;
+    left: 5px;
+  }
 
-@media (max-width: 390px) {
+  .barLine:nth-of-type(3) {
+    top: 27px;
+    left: 5px;
+  }
+
+  .neon-desktop {
+    display: none;
+  }
+
+  .neon-mobile {
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-image: url("assets/neon-mobile.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative;
+    top: -75px;
+  }
+
+  .logotype {
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 180px;
+    height: 90px;
+    align-self: start;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5px;
+  }
+
+  .hero {
+    align-items: center;
+    top: -121px;
+    height: 280px;
+    display: flex;
+    padding: 0px 20px;
+    gap: 0px;
+    position: relative;
+  }
+
+  .hero h1 {
+    position: relative;
+    font-size: 32px;
+    top: 105px;
+  }
+
+  .hero-info {
+    position: relative;
+    flex-wrap: wrap;
+    top: 110px;
+    align-items: center;
+  }
+
+  .genre {
+    order: 2;
+    gap: 5px;
+  }
+
+  .genre button {
+    font-size: 12px;
+    font-weight: 400;
+    border: none;
+    padding: 3px;
+  }
+
+  .details-wrapper {
+    order: 1;
+    gap: 10px;
+  }
+
+  .details-wrapper p {
+    font-size: 12px;
+  }
+
+  .about {
+    flex-direction: column;
+    margin: 0px 30px;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .movie-buttons {
+    order: 1;
+    width: 100%;
+    margin: 20px 0px;
+    align-items: center;
+  }
+
+  .movie-buttons button {
+    width: 80%;
+  }
+
+  .text {
+    order: 2;
+  }
+
+  .movie-images {
+    padding: 30px;
+  }
+
+  .image-one {
+    width: 100%;
+  }
+  .image-two,
+  .image-three {
+    display: none;
+  }
+
+  .tickets {
+    padding: 0px 30px;
+  }
+
+  .show-details {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .show-date-wrapper,
+  .show-location-wrapper {
+    width: 80%;
+  }
+
+  .date p,
+  .location p {
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  .shows {
+    margin-top: 10px;
+  }
+
+  .picked-movie-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .confirm {
+    flex-direction: row;
+  }
+
+  .movie-poster {
+    display: none;
+  }
+
+  footer {
+  }
 }
