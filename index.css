@@ -415,7 +415,7 @@ footer {
   top: 250px;
 }
 
-.playButton:hover, .bar:hover, h3:hover, .arrowRed:hover, .sliderNav:hover, .button-language:hover, figcaption:hover, .hero:hover, figure:hover, .tickets:hover .navString1:hover, .navString2:hover, .navString3:hover, .logotype:hover {
+.playButton:hover, .bar:hover, h3:hover, .arrowRed:hover, .sliderNav:hover, .button-language:hover, figcaption:hover, .hero:hover, figure:hover, .tickets:hover, .trailer:hover, .navString1:hover, .navString2:hover, .navString3:hover, .logotype:hover {
   cursor: pointer;
 }
 
@@ -443,50 +443,61 @@ footer {
     display: none;
   }
   .navbar {
-    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    position: relative;
+    justify-content: end;
+    align-items: center;
+    margin:0px;
+    flex-direction: row;
   }
+
+  
+  .logotype {
+    background-image: url(/assets/logo.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 285px;
+    height: 180px;
+    position: absolute;
+    left: 157px;
+    top: -15px;
+  }
+  
+  nav {
+    display: flex;
+    margin: 50px 50px 15px 50px;
+    gap: 50px;
+  }
+  
+  nav a {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline solid transparent;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
   
   .neonDesktop {
     display: block;
     width: 100%;
-    height: 110px;
+    height: 120px;
     background-image: url("assets/neon-desktop.svg");
     background-position: bottom;
     background-repeat: no-repeat;
     z-index: 0;
     position: relative;
   }
-  .logotype {
-    background-position: left;
-    width: 150px;
-    height: 140px;
-    align-self: start;
-    left: 90px;
-    top: 5px;
   
-  }
-  .navStrings {
-    display: block;
-    font-family: 'Poppins';
-    font-size: 16px;
-    font-weight: 600;
-    flex-direction: row;
-  }
-  .navString {
-    position: absolute;
-  }
-  .navString:nth-of-type(1) {
-    right: 520px;
-    top: 60px;
-  }
-  .navString:nth-of-type(2) {
-    right: 300px;
-    top: 60px;
-  }
-  .navString:nth-of-type(3) {
-    right: 80px;
-    top: 60px;
-  }
+
+
 
   /* HERO */
 
@@ -503,7 +514,7 @@ footer {
     background-position: center top;
     box-shadow: 0px -50px 50px 0px var(--midnight) inset, 0px -30px 30px 0px var(--midnight) inset;
     position: relative;
-    bottom: 35px;
+    bottom: 41px;
   }
   .trailer, .tickets, .back-to-the-future {
     position: absolute;

@@ -29,6 +29,11 @@ p {
 .navbar {
   display: flex;
   justify-content: space-between;
+  height: 137px;
+  position: relative;
+  justify-content: end;
+  align-items: center;
+  margin:0px;
 }
 
 .logotype {
@@ -36,14 +41,16 @@ p {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  width: 200px;
-  height: 100px;
-  margin: 10px 0px 0px 25px;
+  width: 285px;
+  height: 180px;
+  position: absolute;
+  left: 15px;
+  top: -15px;
 }
 
 nav {
   display: flex;
-  margin: 50px 50px 15px 50px;
+  margin: 22px 50px 15px 50px;
   gap: 50px;
 }
 
