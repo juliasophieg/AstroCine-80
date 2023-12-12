@@ -542,6 +542,9 @@ footer {
     text-transform: uppercase;
     border: 0px;
   }
+  .trailer:hover, .tickets:hover {
+    background-color: rgb(146, 3, 0);
+  }
 
   /* SLIDES */
   
