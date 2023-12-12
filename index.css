@@ -2,19 +2,17 @@
   --midnight: #1d1c43;
   --cinema-red: #b02623;
   --cozy-purple: #3b3369;
-  --dark-midnight: #04062E;
+  --dark-midnight: #04062e;
 }
 
-
 @font-face {
-  font-family: 'Alba';
-  src: url('fonts/ALBA____.TTF') format('TFF'),
-       url('fonts/ALBAM___.TTF') format('TFF'),
-       url('fonts/ALBAS___.TTF') format('TFF');
+  font-family: "Alba";
+  src: url("fonts/ALBA____.TTF") format("TFF"),
+    url("fonts/ALBAM___.TTF") format("TFF"),
+    url("fonts/ALBAS___.TTF") format("TFF");
   font-weight: normal;
   font-style: normal;
 }
-
 
 * {
   box-sizing: border-box;
@@ -27,7 +25,12 @@ body {
   color: white;
 }
 
-.add-string-desktop, .navStrings, .neonDesktop, .hero-desktop, .arrowWhite, nav {
+.add-string-desktop,
+.navStrings,
+.neonDesktop,
+.hero-desktop,
+.arrowWhite,
+nav {
   display: none;
 }
 
@@ -44,7 +47,6 @@ body {
   align-content: center;
 }
 
-
 .logotype {
   display: flex;
   background-repeat: no-repeat;
@@ -58,27 +60,25 @@ body {
   top: -5px;
 }
 
-.barLine, .logotype {
+.barLine,
+.logotype {
   position: absolute;
 }
 
-.barLine:nth-of-type(1) { 
+.barLine:nth-of-type(1) {
   top: 16px;
   left: 5px;
 }
 
-.barLine:nth-of-type(2) { 
+.barLine:nth-of-type(2) {
   top: 21px;
   left: 5px;
 }
 
-.barLine:nth-of-type(3) { 
+.barLine:nth-of-type(3) {
   top: 27px;
   left: 5px;
 }
-
-
-
 
 .neonMobile {
   width: 100%;
@@ -90,9 +90,6 @@ body {
   position: relative;
 }
 
-
-
-
 /* HERO MOBILE*/
 
 .hero {
@@ -103,7 +100,8 @@ body {
   background-repeat: no-repeat;
   z-index: 0;
   background-position: center top;
-  box-shadow: 0px -50px 50px 0px var(--midnight) inset, 0px -30px 30px 0px var(--midnight) inset;
+  box-shadow: 0px -50px 50px 0px var(--midnight) inset,
+    0px -30px 30px 0px var(--midnight) inset;
   position: relative;
   bottom: 35px;
 }
@@ -115,23 +113,23 @@ body {
   background-color: var(--midnight);
   bottom: -1px;
   z-index: 3;
-
 }
 
-
-.playButton, h6, h1 {
+.playButton,
+h6,
+h1 {
   position: absolute;
 }
 
 .playButton {
   opacity: 0.8;
   left: 50%;
-  top:50%;
+  top: 50%;
   transform: translateX(-50%);
 }
 
 h6 {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 300;
   font-size: 10px;
   letter-spacing: 0.5px;
@@ -141,7 +139,7 @@ h6 {
 }
 
 h1 {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 2px;
@@ -158,15 +156,15 @@ h1 {
   position: relative;
 }
 
-
-h2, h3, .arrowRed {
+h2,
+h3,
+.arrowRed {
   position: absolute;
 }
 
-
 h2 {
   margin: 0px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -174,10 +172,9 @@ h2 {
   left: 20px;
 }
 
-
 h3 {
   margin: 0px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 10px;
   font-weight: 400;
   letter-spacing: 0.5px;
@@ -186,12 +183,10 @@ h3 {
   color: var(--cinema-red);
 }
 
-
 .arrowRed {
   bottom: 1px;
   right: 30px;
 }
-
 
 .slideContainer {
   position: relative;
@@ -210,7 +205,6 @@ h3 {
 .sliderWrapper {
   position: relative;
   margin: 0;
-  
 }
 
 .slider {
@@ -230,21 +224,18 @@ h3 {
   border-radius: 5px;
 }
 
-
 figure {
   margin: 0px;
   padding-right: 12px;
 }
 
-
 figcaption {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 10px;
   font-weight: 300;
-  color: rgba(191, 191, 191, 0.80);
+  color: rgba(191, 191, 191, 0.8);
   letter-spacing: 0.4px;
 }
-
 
 .sliderNav {
   display: flex;
@@ -254,7 +245,6 @@ figcaption {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  
 }
 
 .sliderNav a {
@@ -281,9 +271,7 @@ figcaption {
   z-index: 1;
 }
 
-
 /* ADD */
-
 
 .add {
   display: flex;
@@ -295,7 +283,9 @@ figcaption {
   padding: 0px 20px;
 }
 
-.add-string, h4, h5 {
+.add-string,
+h4,
+h5 {
   position: absolute;
 }
 
@@ -306,20 +296,18 @@ figcaption {
   height: 170px;
 }
 
-
 h4 {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 8px;
   font-weight: 300;
   letter-spacing: 0.5px;
-  color: rgba(191, 191, 191, 0.80);
+  color: rgba(191, 191, 191, 0.8);
   top: -25px;
   right: 0px;
 }
 
-
 .add-string {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 16px;
   font-weight: 700;
   text-align: center;
@@ -329,9 +317,8 @@ h4 {
   white-space: nowrap;
 }
 
-
 h5 {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 8px;
   font-weight: 300;
   bottom: 5px;
@@ -347,31 +334,32 @@ h5 {
   color: rgb(114, 149, 223);
 }
 
-
-
 /* FOOTER */
-
-
 
 footer {
   position: relative;
   background-color: var(--dark-midnight);
   padding: 20px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 14px;
   font-weight: 200;
-  color:white;
+  color: white;
   opacity: 70%;
   width: 100%;
   height: 350px;
   letter-spacing: 2px;
 }
 
-
-.button-language, .arrow-language, .globe, .phone-number, .phone, .mail-adress, .mail, .copyright {
+.button-language,
+.arrow-language,
+.globe,
+.phone-number,
+.phone,
+.mail-adress,
+.mail,
+.copyright {
   position: absolute;
 }
-
 
 .button-language {
   border: 0px;
@@ -380,7 +368,7 @@ footer {
   background: #212352;
   width: 142px;
   height: 33px;
-  color:white;
+  color: white;
   text-align: left;
   margin-top: 20px;
 }
@@ -390,7 +378,7 @@ footer {
   left: 140px;
 }
 .globe {
-  top:48px;
+  top: 48px;
   left: 175px;
 }
 .phone-number {
@@ -400,7 +388,7 @@ footer {
 }
 .phone {
   top: 118px;
-  left: 140px
+  left: 140px;
 }
 .mail-adress {
   top: 185px;
@@ -415,14 +403,25 @@ footer {
   top: 250px;
 }
 
-.playButton:hover, .bar:hover, h3:hover, .arrowRed:hover, .sliderNav:hover, .button-language:hover, figcaption:hover, .hero:hover, figure:hover, .tickets:hover, .trailer:hover, .navString1:hover, .navString2:hover, .navString3:hover, .logotype:hover {
+.playButton:hover,
+.bar:hover,
+h3:hover,
+.arrowRed:hover,
+.sliderNav:hover,
+.button-language:hover,
+figcaption:hover,
+.hero:hover,
+figure:hover,
+.tickets:hover,
+.trailer:hover,
+.navString1:hover,
+.navString2:hover,
+.navString3:hover,
+.logotype:hover {
   cursor: pointer;
 }
 
-
-
 /* MEDIA BREAKPOINTS */
-
 
 @media (max-width: 390px) {
   .backgroundAdd {
@@ -431,11 +430,14 @@ footer {
   }
 }
 
-
 @media (min-width: 900px) {
-/* HIDE */
-   .neonMobile, .hero, h3, .arrowRed, .add-string {
-  display: none;
+  /* HIDE */
+  .neonMobile,
+  .hero,
+  h3,
+  .arrowRed,
+  .add-string {
+    display: none;
   }
 
   /* NAVBAR */
@@ -449,11 +451,10 @@ footer {
     position: relative;
     justify-content: end;
     align-items: center;
-    margin:0px;
+    margin: 0px;
     flex-direction: row;
   }
 
-  
   .logotype {
     background-repeat: no-repeat;
     background-size: 100%;
@@ -464,13 +465,13 @@ footer {
     left: 157px;
     top: -15px;
   }
-  
+
   nav {
     display: flex;
     margin: 50px 50px 15px 50px;
     gap: 50px;
   }
-  
+
   nav a {
     color: white;
     font-size: 14px;
@@ -478,12 +479,11 @@ footer {
     text-decoration: underline solid transparent;
     transition: all 0.5s ease-in-out;
   }
-  
+
   nav a:hover {
     text-decoration: underline;
   }
-  
-  
+
   .neonDesktop {
     display: block;
     width: 100%;
@@ -491,16 +491,12 @@ footer {
     background-image: url("assets/neon-desktop.svg");
     background-position: bottom;
     background-repeat: no-repeat;
-    z-index: 0;
+    z-index: 1;
     position: relative;
   }
-  
-
-
 
   /* HERO */
 
-  
   .hero-desktop {
     display: block;
     width: 100%;
@@ -511,11 +507,14 @@ footer {
     background-position: 80% left;
     z-index: 0;
     background-position: center top;
-    box-shadow: 0px -50px 50px 0px var(--midnight) inset, 0px -30px 30px 0px var(--midnight) inset;
+    box-shadow: 0px -50px 50px 0px var(--midnight) inset,
+      0px -30px 30px 0px var(--midnight) inset;
     position: relative;
-    bottom: 41px;
+    bottom: 43px;
   }
-  .trailer, .tickets, .back-to-the-future {
+  .trailer,
+  .tickets,
+  .back-to-the-future {
     position: absolute;
   }
   .back-to-the-future {
@@ -530,7 +529,8 @@ footer {
     top: 210px;
     left: 113px;
   }
-  .trailer, .tickets {
+  .trailer,
+  .tickets {
     text-align: center;
     font-family: "Poppins";
     font-size: 16px;
@@ -548,7 +548,7 @@ footer {
   }
 
   /* SLIDES */
-  
+
   h2 {
     font-size: 40px;
     font-weight: 600;
@@ -571,7 +571,7 @@ footer {
     border: none;
     right: 20px;
     top: 220px;
-    padding:10px;
+    padding: 10px;
   }
   figure {
     padding-right: 35px;
@@ -615,7 +615,7 @@ footer {
   .add-string-desktop {
     display: block;
     position: absolute;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-size: 30px;
     font-weight: 600;
     text-align: center;
@@ -649,13 +649,21 @@ footer {
     box-sizing: border-box;
     padding: 10px;
     width: 25%;
-    
   }
-  .language-container, .phone-container, .mail-container, .copyright-container {
-
+  .language-container,
+  .phone-container,
+  .mail-container,
+  .copyright-container {
     position: relative;
   }
-  .button-language, .arrow-language, .globe, .phone-number, .phone, .mail-adress, .mail, .copyright{
+  .button-language,
+  .arrow-language,
+  .globe,
+  .phone-number,
+  .phone,
+  .mail-adress,
+  .mail,
+  .copyright {
     position: absolute;
     top: 35px;
   }
@@ -663,12 +671,10 @@ footer {
     margin: 0;
   }
   .globe {
-    top:42px;
+    top: 42px;
   }
   .arrow-language {
     top: 45px;
     left: 130px;
   }
-
-
 }

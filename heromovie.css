@@ -33,7 +33,7 @@ p {
   position: relative;
   justify-content: end;
   align-items: center;
-  margin:0px;
+  margin: 0px;
 }
 
 .logotype {
@@ -237,7 +237,7 @@ button {
   background-color: var(--cozy-purple);
   border-radius: 5px;
   transition: all ease-in-out 0.3s;
-  padding: 30px;
+  padding: 15px 30px;
 }
 
 .show-wrapper:hover,
@@ -266,10 +266,10 @@ button {
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid white;
+  padding: 30px 0px 15px 0px;
 }
 
 .details {
-  margin-top: 20px;
   display: flex;
   gap: 20px;
 }
@@ -342,8 +342,86 @@ button {
 /* FOOTER */
 
 footer {
+  display: flex;
+  flex-wrap: wrap;
+  position: none;
   background-color: var(--midnight-dark);
-  height: 123px;
-  margin-top: 100px;
+  padding: 20px;
+  font-size: 14px;
+  font-weight: 200;
+  opacity: 70%;
+  width: 100%;
+  height: 140px;
+  letter-spacing: 2px;
 }
 
+.language-container,
+.phone-container,
+.mail-container,
+.copyright-container {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 25%;
+  position: relative;
+}
+
+.button-language,
+.arrow-language,
+.globe,
+.phone-number,
+.phone,
+.mail-adress,
+.mail,
+.copyright {
+  position: absolute;
+  top: 35px;
+}
+.button-language {
+  border: 0px;
+  font-size: 16px;
+  border-radius: 3px;
+  background: #212352;
+  width: 142px;
+  height: 33px;
+  color: white;
+  font-weight: 400;
+  text-align: left;
+  margin: 0;
+}
+
+.arrow-language {
+  top: 45px;
+  left: 130px;
+}
+
+.globe {
+  top: 42px;
+  left: 175px;
+}
+
+.phone-number {
+  top: 45px;
+  left: 20px;
+  color: white !important;
+}
+.phone {
+  top: 42px;
+  left: 140px;
+}
+.mail-adress {
+  top: 42px;
+  left: 20px;
+}
+.mail {
+  top: 42px;
+  left: 220px;
+}
+
+.copyright {
+  top: 42px;
+}
+
+@media (max-width: 390px) {
+}
