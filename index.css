@@ -455,7 +455,7 @@ footer {
 
   
   .logotype {
-    background-image: url(/assets/logo.svg);
+    background-image: url(assets/logo.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
