@@ -576,14 +576,17 @@ footer {
   }
 
   .movie-buttons {
+    flex-direction: row;
     order: 1;
     width: 100%;
     margin: 20px 0px;
     align-items: center;
+    gap: 15px;
   }
 
   .movie-buttons button {
     width: 80%;
+    font-size: 14px;
   }
 
   .text {
