@@ -367,6 +367,59 @@ button a {
   font-weight: 800;
 }
 
+.add {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 80px;
+}
+
+.backgroundAdd {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  border-radius: 5px;
+  background-color: var(--cinema-red);
+  padding: 40px;
+}
+
+.backgroundAdd h2 {
+  text-align: center;
+}
+
+.backgroundAdd h5 {
+  font-weight: 400;
+  margin: 0;
+}
+
+.sign-up {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.sign-up input {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 300px;
+}
+
+::placeholder {
+  font-weight: 16px;
+}
+
+.sign-up button {
+  height: 35px;
+  padding: 0px 15px;
+  border-radius: 50px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-weight: 800;
+}
+
 /* FOOTER */
 
 footer {
@@ -489,11 +542,12 @@ footer {
     flex-wrap: wrap;
     top: 110px;
     align-items: center;
+    gap: 10px;
   }
 
   .genre {
     order: 2;
-    gap: 5px;
+    gap: 3px;
   }
 
   .genre button {
@@ -506,6 +560,8 @@ footer {
   .details-wrapper {
     order: 1;
     gap: 10px;
+    padding-right: 10px;
+    border-right: 1px solid white;
   }
 
   .details-wrapper p {
@@ -586,6 +642,26 @@ footer {
     display: none;
   }
 
-  footer {
+  .add {
+    padding: 20px;
+  }
+
+  .backgroundAdd {
+    padding: 40px 20px;
+  }
+
+  .backgroundAdd h2 {
+    font-size: 16px;
+  }
+  .backgroundAdd h5 {
+    font-size: 8px;
+  }
+
+  .sign-up input {
+    width: 220px;
+  }
+
+  .sign-up button {
+    padding: 5px 10px;
   }
 }

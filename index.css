@@ -293,7 +293,7 @@ h5 {
   position: relative;
   background-color: var(--cinema-red);
   width: 350px;
-  height: 170px;
+  height: 220px;
 }
 
 h4 {
@@ -321,10 +321,39 @@ h5 {
   font-family: "Poppins";
   font-size: 8px;
   font-weight: 300;
-  bottom: 5px;
+  bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
+}
+
+.sign-up {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 162px;
+  gap: 10px;
+}
+
+.sign-up input {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 220px;
+}
+
+::placeholder {
+  font-weight: 16px;
+}
+
+.sign-up button {
+  height: 35px;
+  padding: 0px 15px;
+  border-radius: 50px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-weight: 800;
 }
 
 .news-link {
@@ -609,8 +638,8 @@ figure:hover,
   }
   .backgroundAdd {
     width: 1100px;
-    height: 210px;
-    border-radius: 10px;
+    height: 250px;
+    border-radius: 5px;
   }
   .add-string-desktop {
     display: block;
@@ -631,6 +660,14 @@ figure:hover,
   h5 {
     font-size: 16px;
     font-weight: 300;
+  }
+
+  .sign-up {
+    top: 180px;
+  }
+
+  .sign-up input {
+    width: 300px;
   }
 
   /* FOOTER */
